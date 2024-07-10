@@ -1,4 +1,4 @@
-name: CML
+name: CML Report
 on: [push]
 jobs:
   train-and-report:
@@ -11,4 +11,4 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Create CML report
-          echo "Hiii" >> report.md
+          echo "Hiii, Welcome to CML" >> report.md
