@@ -10,9 +10,5 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install -r requirements.txt
-          python train.py  # generate plot.png
-
           # Create CML report
-          cat metrics.txt >> report.md
-          echo '![](./plot.png "Confusion Matr
+          echo "Hiii" >> report.md
